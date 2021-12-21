@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+    font-family: 'Merriweather', serif;
+}
+#calculoter{
+    background:linear-gradient(#0000009e, #0f0f0fb8),url(/img/ksenia-kazak-jyaU29TSUTA-unsplash.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+.container{
+    width:90%;
+    height:100vh;
+    margin:0 auto;
+}
+.cal-body{
+    width:320px;
+    height:540px;
+    background:rgba(49, 49, 49, 0.774);
+    border-radius:5px;
+    margin:0 auto;
+    position:relative;
+    top:50px;
+}
+#result{
+    height:120px;
+    color:rgba(255, 255, 255, 0.712);
+    text-align: right;
+    border:2px solid rgba(221, 221, 221, 0.37);
+    border-radius: 5px;;
+}
+
+
+#history{
+    padding:10px 10px;
+    height:40px;
+}
+#output{
+    padding:18px 14px;
+    font-size:22px;
+    height:60px;
+}
+
+
+
+#keybord{
+    height:400px;
+}
+.operator, .number{
+    width:50px;
+    height:50px;
+    margin:15px;
+    float:left;
+    border-radius:5px;
+    border:none;
+    font-weight:bold;
+    font-size:18px;
+    background:rgba(221, 221, 221, 0.582);
+    
+}
