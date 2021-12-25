@@ -1,32 +1,37 @@
-// for(var i=1; i<=100; i++){
-//     if(i==50){
-//         continue;
-//     }
-//     document.write(" " + i);
-   
-// }
 
-// var i = prompt("Enter naumber");
-// var e = prompt("Enter naumber");
-// if(i%2 == 0 ){
-//     document.write( i + "  is Even number");
-// }else{
-//     document.write(  i +  "  is odd number, ");
-// }
+let screen = document.getElementById('screen');
+ buttons=document.querySelectorAll('button');
+ let screenValue = '';
+    for(item of buttons){
+        item.addEventListener('click', (e) =>{
+            buttonText = e.target.innerText;
+            console.log(buttonText);
+
+            if(buttonText=='X'){
+                buttonText='*';
+                screenValue += buttonText;
+                screen.value =screenValue;
+            } 
+            else if(buttonText=='C'){
+                screenValue ='';
+                screen.value =screenValue;
+            } 
+            else if(buttonText=='CE'){
+                screenValue -= buttonText;
+                screen.value =screenValue;
+            } 
+            
+            else if(buttonText=='='){
+                screen.value =eval(screenValue);
+            } 
+            else{
+                screenValue += buttonText;
+                screen.value =screenValue;
+            } 
 
 
-// if(i>0 ){
-//     document.write( i + " is positive number");
-// }else{
-//     document.write(  i +  "  is negative number ");
-// }
-//  document.write('<br>');
-// var result = i>0 ? "positive" : " negative";
-// document.write(result);
 
-// function script(){
-//     var result = i*e;
-//     document.write(" result is = " + result );
-// }
 
-// script();
+
+        })
+    }
